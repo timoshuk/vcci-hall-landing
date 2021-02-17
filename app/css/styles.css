@@ -459,26 +459,27 @@ body {
   .zall-info__item {
     position: relative;
     font-size: 1.6rem;
-    width: 30%;
-    max-width: 400px;
-    min-width: 340px;
+    min-width: 300px;
+    height: 300px;
     flex-grow: 1;
     flex-shrink: 1;
     align-self: stretch;
-    margin: 10px; }
+    margin: 10px;
+    text-align: center;
+    z-index: 990; }
     .zall-info__item .card {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
-      height: 100%;
-      text-align: center; }
+      height: 100%; }
       .zall-info__item .card i {
         font-size: 2em;
-        margin: 20px auto 20px; }
-  .zall-info .card {
-    position: relative;
-    z-index: 990; }
+        margin: 30px auto 20px; }
+
+@media all and (max-width: 768px) {
+  .zall-info__item {
+    font-size: 2rem; } }
 
 .photo_links {
   display: flex;
